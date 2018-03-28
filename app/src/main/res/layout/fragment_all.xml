@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/all_fragment_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+    <!--<ImageButton-->
+        <!--android:layout_width="55dp"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:src="@drawable/jiahao"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginBottom="18dp"-->
+        <!--android:tint="@android:color/white"-->
+        <!--android:id="@+id/all_fragment_fab"-->
+        <!--android:onClick="onClick"-->
+        <!--android:elevation="5dp"-->
+        <!--android:background="@drawable/ripple"-->
+        <!--android:stateListAnimator="@anim/fab_anim"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginEnd="20dp" />-->
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_labels_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="20dp"
+        android:paddingBottom="18dp"
+        android:paddingLeft="10dp"
+        fab:menu_colorPressed="#CD2626"
+        fab:menu_colorRipple="#CD2626"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_labels_position="left">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+             fab:fab_colorNormal="#ff8000"
+            fab:fab_colorRipple="#ef7c00"
+            fab:fab_colorPressed="#cc5900"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/key"
+            fab:fab_size="mini"
+            fab:fab_label="    密码    " />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            fab:fab_colorNormal="#54FF9F"
+            fab:fab_colorRipple="#5ebc9c"
+            fab:fab_colorPressed="#58b193"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bank"
+            fab:fab_size="mini"
+            fab:fab_label="  银行卡  " />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            fab:fab_colorNormal="#631fa1"
+            fab:fab_colorRipple="#652387"
+            fab:fab_colorPressed="#7a27a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/idcard"
+            fab:fab_size="mini"
+            fab:fab_label="  身份证  " />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

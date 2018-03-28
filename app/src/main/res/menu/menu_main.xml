@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/context_search"-->
+        <!--android:title="搜索"-->
+        <!--android:icon="@drawable/searcher_menu"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="always" />-->
+    <item
+        android:id="@+id/context_menu"
+        android:title="@string/context_menu"
+        android:icon="@drawable/sandian"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+</menu>

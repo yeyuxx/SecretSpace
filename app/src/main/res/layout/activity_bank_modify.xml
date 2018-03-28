@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#e7eaef"
+    android:clipToPadding="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:background="@color/black_one"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="215dp">
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/rl_bank_modify_3d_card"
+            android:background="#00ffffff"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="350dp"
+            android:layout_height="180dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ly_bank_modify_one_bg_bank"
+                android:orientation="vertical"
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_bank_modify_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="280dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black_one"
+                    android:layout_marginTop="80dp"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ly_bank_modify_two_bg_bank"
+                android:orientation="vertical"
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <head.secretspace.ui.view.MyTextView
+                    android:layout_marginTop="75dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/tv_bank_modify_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <head.secretspace.ui.view.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginLeft="260dp"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:text="注册日期" />
+
+                <head.secretspace.ui.view.MyTextView
+                    android:id="@+id/tv_bank_modify_data"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="275dp"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#e7eaef"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="#e7eaef"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:inputType="number"
+                        android:background="@color/white"
+                        android:id="@+id/ed_bank_modify_account"
+                        android:maxLines="1"
+                        android:layout_marginRight="10dp"
+                        android:textColorHint="#101010"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="230dp"
+                        android:maxLength="26"
+                        android:layout_height="50dp"
+                        android:hint="银行账户" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/ed_bank_modify_registrationDate"
+                        android:hint="注册日期"
+                        android:maxLines="1"
+                        android:inputType="date"
+                        android:textColorHint="#101010"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp">
+
+                    <EditText
+                        android:id="@+id/ed_bank_modify_cardholderName"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:hint="持卡人姓名"
+                        android:maxLines="1"
+                        android:textColorHint="#101010" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:maxLines="1"
+                        android:id="@+id/ed_bank_modify_bankCardTelPhoneNum"
+                        android:hint="绑定手机号"
+                        android:inputType="phone"
+                        android:textColorHint="#101010"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:background="@color/white"
+                        android:id="@+id/ed_bank_modify_bankCardRemarks"
+                        android:layout_marginRight="10dp"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:hint="备注"
+                        android:layout_marginTop="20dp"
+                        android:textColorHint="#101010"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

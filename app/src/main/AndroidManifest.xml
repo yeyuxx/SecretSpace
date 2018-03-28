@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="head.secretspace">
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+<application
+        android:allowBackup="true"
+        android:icon="@drawable/login_key"
+        android:name=".config.MyApplication"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/login_key"
+        android:supportsRtl="true">
+        <activity android:name=".ui.activity.login.VerifyLoginActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.login.SetPasswordActivity"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name=".ui.activity.MainActivity"
+            android:theme="@style/AppTheme"
+            />
+        <activity android:name=".ui.activity.passworditem.PasswordAddActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.bankcarditem.BankCardActivity"
+            android:theme="@style/AppTheme"
+            />
+    <activity android:name=".ui.activity.passworditem.PasswordDetailedActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".ui.activity.passworditem.CopyActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ui.activity.SearchAllDataActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".ui.activity.passworditem.PasswordModifyActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".ui.activity.bankcarditem.BankTypeActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".ui.activity.bankcarditem.BankDetailedActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".ui.activity.bankcarditem.BankCopyActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".ui.activity.bankcarditem.BankModifyActivity"
+            android:theme="@style/AppTheme"/>
+
+    <activity android:name=".ui.activity.Identity.IdentityCardActivity"
+        android:theme="@style/AppTheme"/>
+
+
+    <activity android:name=".ui.activity.Identity.IdentityCopyActivity"
+        android:theme="@style/AppTheme"/>
+    <activity android:name=".ui.activity.Identity.IdentityDetailedActivity"
+        android:theme="@style/AppTheme"/>
+    <activity android:name=".ui.activity.Identity.IdentityModifyActivity"
+        android:theme="@style/AppTheme"/>
+    <activity android:name=".ui.activity.login.ModifyPasswordActivity"
+        android:theme="@style/AppTheme"/>
+
+    <activity android:name=".ui.activity.login.NetLoginActivity"
+        android:theme="@style/style3"/>
+    <activity android:name=".ui.activity.login.NetRegisterActivity"
+        android:theme="@style/Translucent"/>
+
+
+    <service android:name=".service.DelService" />
+    <receiver android:name=".broadcastreceiver.MyTimeBroadcast">
+        <intent-filter>
+            <action android:name="TIME_CHANGED_ACTION"/>
+        </intent-filter>
+    </receiver>
+
+    <provider
+        android:authorities="head.secretspace.fileprovider"
+        android:name="android.support.v4.content.FileProvider"
+        android:grantUriPermissions="true"
+        android:exported="false">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/filepaths"/>
+    </provider>
+
+    </application>
+
+</manifest>

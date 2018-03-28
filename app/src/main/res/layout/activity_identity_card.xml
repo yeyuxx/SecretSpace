@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/toolbar_shadow"/>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="姓名"
+                    android:id="@+id/ed_idcard_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/idcard_style"
+                    android:layout_gravity="center"
+                    android:text="性别"
+                     />
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/rb_idcard_man"
+                        android:layout_width="30dp"
+                        android:checked="false"
+                        android:layout_height="30dp"
+                        android:button="@null"
+                        android:background="@drawable/radio_man"/>
+
+                    <RadioButton
+                        android:checked="false"
+                        android:button="@null"
+                        android:id="@+id/rb_idcard_woman"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/radio_woman"/>
+                </RadioGroup>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/additemtext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="名族"
+                    android:textColor="#33befa"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/sp_idcard_family_name"
+                    android:spinnerMode="dialog"
+                    android:entries="@array/famous_families"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:hint="家庭住址"
+                    android:id="@+id/ed_idcard_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:hint="身份证号"
+                    android:id="@+id/ed_idcard_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:hint="签发机关"
+                    android:id="@+id/ed_idcard_mechanism"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/ed_idcard_start"
+                    android:hint="起始时间"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/bt_idcard_start"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/identity_calendarview"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:hint="终止时间"
+
+                    android:id="@+id/ed_idcard_end"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:id="@+id/bt_idcard_end"
+                    android:layout_width="35dp"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp"
+                    android:background="@drawable/identity_calendarview"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

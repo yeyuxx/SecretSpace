@@ -1,0 +1,269 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_id_copy"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctl_id_copy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/black_one"
+            app:statusBarScrim="@color/black_one"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_app"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tb_id_copy"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dbdbdf"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="3dp"
+            app:cardElevation="2dp"
+            android:layout_marginTop="15dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#fff"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="基本信息"
+                    android:textSize="20dp"
+                    android:textColor="#26a3d4"/>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/buk" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ly_id_xm"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/password_yonghu"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_xm"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="姓名"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_id_xb"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/xb"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_xb"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="性别"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_id_mz"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/mingzu"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_mz"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="名族"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_id_sfzh"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/sfzh"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_sfzh"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="身份证号"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ly_id_jtzz"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/dzhi"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_jtzz"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="家庭住址"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly_id_qfjg"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/jiguan"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_qfjg"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="签发机关"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly_id_qssj"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/rili"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_qssj"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="起始时间"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ly_id_zzs"
+                        android:background="@drawable/pw_dianji"
+                        style="@style/ll_bank_copy">
+
+                        <ImageView
+                            style="@style/im_bank_copy"
+                            android:background="@drawable/rili"/>
+
+                        <LinearLayout style="@style/ll_bank">
+
+                            <TextView
+                                android:id="@+id/tv_id_zzs"
+                                style="@style/style1"
+                                />
+                            <TextView
+                                style="@style/style2"
+                                android:text="终止时间"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_id_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="38dp"
+        android:src="@drawable/xiugai"
+        app:layout_anchor="@id/abl_id_copy"
+        app:layout_anchorGravity="bottom|end" />
+
+</android.support.design.widget.CoordinatorLayout>

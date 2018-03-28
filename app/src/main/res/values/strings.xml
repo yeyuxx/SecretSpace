@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SecretSpace</string>
+    <string name="bt_login">登录</string>
+    <string name="bt_query">创建密码库</string>
+    <string name="shurumima">输入密码</string>
+    <string name="context_menu">Context menu</string>
+
+    <string name="no_sensor_dialog_title">
+        硬件不支持哦!(No fingerprint sensor)
+    </string>
+    <string name="no_sensor_dialog_message">
+        没有指纹传感器!换个新手机吧!买买买!!
+        (No fingerprint sensor on your device, click cancel to exit.)
+    </string>
+    <string name="no_fingerprint_enrolled_dialog_title">
+        还没有录指纹哦!(No fingerprint enrolled)
+    </string>
+    <string name="no_fingerprint_enrolled_dialog_message">
+        还没有录指纹哦!(No fingerprint enrolled)\n
+        <font fgcolor="green">别问我怎么录指纹的\n</font>
+    </string>
+    <string name="ok_btn_dialog">OK</string>
+    <string name="cancel_btn_dialog">Cancel</string>
+
+    <string name="F_fragment_title1">本机备份</string>
+    <string name="F_fragment_message1">数据将备份在本机Secretspace文件夹下</string>
+    <string name="yes">是</string>
+    <string name="cancel">否</string>
+    <string name="F_fragment_title2">本机恢复</string>
+    <string name="F_fragment_message2">将恢复你最近一次备份的数据</string>
+    <string name="modify_text">请设置程序密码</string>
+    <string name="modify_text1">请注意，您可以设置成简单的密码方便记忆，但是一定要牢记密码。</string>
+    <string name="start_use">开始使用</string>
+    <string name="tishi">提示</string>
+    <string name="open">您尚未开启指纹解锁，请尝试密码解锁</string>
+    <string name="zwts">你的指纹解锁未开启哟！！</string>
+    <string name="threeminutes">三分钟</string>
+    <string name="fiveminutes">五分钟</string>
+    <string name="tenminutes">十分钟</string>
+    <string name="fifteenminutes">永不清除</string>
+    <string name="login">登录</string>
+    <string name="Username">用户名</string>
+    <string name="Password">密码</string>
+    <string name="go">登录</string>
+    <string name="register">注册</string>
+    <string name="repeat_password">确认密码</string>
+    <string name="next">next</string>
+
+</resources>

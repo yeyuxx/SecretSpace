@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="head.secretspace.ui.activity.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/toolbar"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<com.github.mzule.fantasyslide.FantasyDrawerLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_drawer_layout"
+    android:layout_marginTop="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <com.github.mzule.fantasyslide.SideBar
+        android:id="@+id/main_left_sidebar"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:gravity="center_vertical"
+        android:background="@color/black_one"
+        app:maxTranslationX="88dp">
+
+        <ImageView
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/login_key"
+            android:layout_marginLeft="30dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_main_favorites"
+            style="@style/MenuText"
+            android:layout_marginLeft="5dp"
+            android:text="数据备份"
+            android:drawableLeft="@drawable/main_favorites"
+            />
+
+        <TextView
+            android:id="@+id/tv_main_all"
+            style="@style/MenuText"
+            android:text="所有项目"
+            android:drawableLeft="@drawable/main_all_project"
+            />
+
+        <TextView
+            android:id="@+id/tv_main_set"
+            style="@style/MenuText"
+            android:text="设置"
+            android:drawableLeft="@drawable/main_set"
+            />
+
+        <TextView
+            android:id="@+id/tv_main_about"
+            style="@style/MenuText"
+            android:text="关于"
+            android:drawableLeft="@drawable/main_about"
+            />
+    </com.github.mzule.fantasyslide.SideBar>
+
+</com.github.mzule.fantasyslide.FantasyDrawerLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/toolbar_shadow"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:background="@color/black_one"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        >
+
+        <ImageView
+            android:id="@+id/im_title_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/guanbi"
+            />
+        <Button
+            android:id="@+id/bt_title_close"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:background="#00ffffff"
+            />
+        </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="15dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/im_title_save"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/baocun"
+            />
+        <Button
+            android:id="@+id/bt_title_save"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:background="#00ceb6b6"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
